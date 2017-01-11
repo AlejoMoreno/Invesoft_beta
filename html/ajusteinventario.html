@@ -1,0 +1,40 @@
+<html>
+<link rel="stylesheet" href="../style/style.css">
+<link rel="stylesheet" href="style/style.css">
+
+<input type="password" id="password" onblur="myFunction()" placeholder="DIGITE CONTRASEÑA">
+
+<div id="link">
+	<a href="../php/registrarajusteinventario2.php">AJUSTE SALIDAS</a><br>
+	<a href="../php/registrarajusteinventario.php">AJUSTE ENTRADAS</a>
+</div>
+
+</html>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script> 
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+$(document).ready(function(){
+  $('#link').hide();
+});
+
+function myFunction() {
+    var x = document.getElementById("password");
+    if(x.value=='1234'){
+    	alert('password ok ');
+    	$('#link').show();
+    }
+    else{
+    	alert('contraseña invalida');
+    }
+}
+</script>
+
+<style type="text/css">
+a{
+	color:red;
+}
+a:hover{
+	color:blue;
+}
+</style>

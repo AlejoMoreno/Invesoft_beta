@@ -1,0 +1,11 @@
+cambios a la base de datos:
+Se debe agregar datos respecto a la bodega:
+	ciudad
+	localidad
+	persona a cargo
+se debe agregar y cambiar con respecto al histrial:
+	fecha inicial
+	fecha final
+se debe agregar con respecto al kardex:
+	id_producto
+	
